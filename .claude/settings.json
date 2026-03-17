@@ -9,6 +9,15 @@
             "command": "python .claude/scripts/update_tests.py"
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/scripts/auto_pr.py"
+          }
+        ]
       }
     ],
     "PreToolUse": [

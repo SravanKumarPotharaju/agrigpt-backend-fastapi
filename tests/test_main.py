@@ -74,7 +74,7 @@ class TestHelloEndpoint:
         assert api.get("/hello").status_code == 200
 
     def test_returns_correct_greeting(self, api):
-        assert api.get("/hello").json() == {"message": "hello claude"}
+        assert api.get("/hello").json() == {"message": "hi claude"}
 
     def test_response_is_json(self, api):
         resp = api.get("/hello")
